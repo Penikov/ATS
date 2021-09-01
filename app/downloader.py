@@ -25,6 +25,10 @@ class Download:
     Please note: __init__ method uses GitHub API endpoint that requires authorization. 'Download' class
     uses authorization with personal token. So you need to get one to successful download.
 
+    The token has stored in a simple .txt file.
+    Please note: The GitHub API requires token in specific format. You should write your token in a file that way:
+    token [your personal token here]
+
     """
 
 

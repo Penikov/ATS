@@ -1,12 +1,13 @@
 from zipfile import ZipFile
 from os import listdir
 import io
+from conf import Conf
 
-zip_dir = 'e:\Audacity_releases\Journaling\\'
-dest_dir = 'c:\Audacity_journaling\\'
+zip_dir = Conf.DOWNLOAD_DIR
+dest_dir = Conf.EXTRACT_DIR
 
 
-def unzip_archive():
+def unzip():
     arr = zip_dir + str(listdir(zip_dir)[-1])
     print(arr)
 
@@ -25,4 +26,4 @@ def unzip_archive():
                 print('Well done!')
 
 
-unzip_archive()
+unzip()

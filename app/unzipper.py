@@ -26,5 +26,3 @@ def unzip():
 
                 print('Well done!')
 
-
-unzip()

@@ -1,6 +1,6 @@
-from app.downloader import Download
+from app.download import Fetch
 from conf import Conf
 
 
-app = Download(Conf.ARTIFACTS, Conf.BUILD_NAME)
+app = Fetch(Conf.ARTIFACTS, Conf.BUILD_NAME)
 app.unzip()

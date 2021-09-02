@@ -11,7 +11,7 @@ zip_dir = Conf.DOWNLOAD_DIR
 dest_dir = Conf.EXTRACT_DIR
 
 
-class Download:
+class Fetch:
 
     """ Class with method to unzip a downloaded Audacity build
 
@@ -66,3 +66,5 @@ class Download:
                         print(i)
 
                     print('Well done! All files are extracted')
+
+

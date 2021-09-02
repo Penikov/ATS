@@ -21,7 +21,7 @@ class Launch:
 
 
 
-if __name__ == '__main__':
-
-    # Launch the latest Audacity version in the directory
-    Launch(Conf.EXTRACT_DIR).run_max()
+# if __name__ == '__main__':
+#
+#     # Launch the latest Audacity version in the directory
+#     Launch(Conf.EXTRACT_DIR).run_max()

@@ -65,6 +65,6 @@ class Fetch:
                         nested_z2.extract(i, dest_dir)
                         print(i)
 
-                    print('Well done! All files are extracted')
+                    print('Well done! All files have extracted')
 
 

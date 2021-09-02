@@ -8,3 +8,4 @@ class Conf(object):
     EXTRACT_DIR = 'C:\\AudacityAutomation\\'
     TEST_ARCHIVE = 'testarchive.zip'
 
+

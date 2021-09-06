@@ -37,9 +37,9 @@ class Fetch:
         self.file = file
 
         f = ''
-        r = requests.get(self.artifacts, allow_redirects=True, headers=headers)
+        r = requests.get(self.artifacts + '?per_page=' + Conf.PAGE_SIZE + '&' + '&page=' + Conf.PAGE, allow_redirects=True, headers=headers)
         artifact = r.json()['artifacts']
-        print('Searching a file in the array.')
+        print('Searching the file in the array.')
         for i in artifact:
             if self.file == i['name']:
                 f = i['archive_download_url']

@@ -4,8 +4,8 @@ import os
 
 
 class Launch:
-    def __init__(self, extract_dir):
-        self.extract_dir = extract_dir
+    def __init__(self):
+        self.extract_dir = Conf.EXTRACT_DIR
 
     def max_item(self):
         list_dir = os.listdir(self.extract_dir)
@@ -21,7 +21,6 @@ class Launch:
 
 
 
-# if __name__ == '__main__':
-#
-#     # Launch the latest Audacity version in the directory
-#     Launch(Conf.EXTRACT_DIR).run_max()
+
+
+

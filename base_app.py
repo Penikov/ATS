@@ -1,8 +1,8 @@
 from app.download import Fetch
 from conf import Conf
-from app.launch import Launch
+from app.interactions import Welcome_screen
 
 
 app = Fetch(Conf.ARTIFACTS, Conf.BUILD_NAME)
 app.unzip()
-Launch(Conf.EXTRACT_DIR).run_max()
+Welcome_screen().click_checkbox().close()

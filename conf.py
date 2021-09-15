@@ -1,6 +1,6 @@
 class Conf(object):
 
-    BUILD_NAME = 'Audacity_Windows_64bit_1197865240_a06cab7'
+    BUILD_NAME = 'Audacity_Windows_64bit_1236092402_0cbb897'
     with open('C:\\AudacityTestTool\\token.txt', 'r') as t:
         TOKEN = t.read()
     ARTIFACTS = 'https://api.github.com/repos/audacity/audacity/actions/artifacts'

@@ -68,3 +68,6 @@ class Fetch:
                     print('Well done! All files have extracted')
 
 
+
+if __name__ == '__main__':
+    Fetch(Conf.ARTIFACTS, Conf.BUILD_NAME).unzip()

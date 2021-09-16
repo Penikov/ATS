@@ -1,4 +1,4 @@
-from base_app import BaseApp
+from app.launch import Exe
 
 
 class Welcome_screen:
@@ -24,8 +24,22 @@ class Welcome_screen:
         return self.welcome.child_window(title='Close').click()
 
 
+class Audacity:
+    def __init__(self, exe):
+        self.exe = exe
+        self.win = self.exe['Audacity']
+
+    def close_button(self):
+        return self.win.child_window(title='Close').click()
+
+
+
+
+"""This section is using just for easy testing of new elements right in the IDE"""
 if __name__ == '__main__':
-    app = BaseApp().launch_latest()
+    Audacity(Exe().run_max())
+    pass
+
 
 
 

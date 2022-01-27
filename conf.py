@@ -1,6 +1,6 @@
 class Conf(object):
 
-    BUILD_NAME = 'Audacity_Windows_64bit_1236092402_0cbb897'
+    BUILD_NAME = 'Audacity_Windows_64bit_1748778807_e7189ab'
     with open('C:\\AudacityTestTool\\token.txt', 'r') as t:
         TOKEN = t.read()
     ARTIFACTS = 'https://api.github.com/repos/audacity/audacity/actions/artifacts'
@@ -15,4 +15,4 @@ class Conf(object):
 
     # Page number of the results to fetch.
     # Github Default: 1
-    PAGE = '1'
+    PAGE_RANGE = '3'
